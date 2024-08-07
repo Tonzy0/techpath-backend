@@ -1,5 +1,5 @@
-import { ServiceResponse } from "@/common/models/serviceResponse";
-import { logger } from "@/server";
+import { ServiceResponse } from "../../common/models/serviceResponse";
+import { logger } from "../../server";
 import { StatusCodes } from "http-status-codes";
 import { UserRepository } from "../user/userRepository";
 import type { User } from "../user/userModel";

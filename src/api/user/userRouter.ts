@@ -2,11 +2,11 @@ import { OpenAPIRegistry } from "@asteasolutions/zod-to-openapi";
 import express, { type Router } from "express";
 import { z } from "zod";
 
-import { createApiResponse } from "@/api-docs/openAPIResponseBuilders";
-import { UpdatUserProfileSchema, UserSchema } from "@/api/user/userModel";
-import { validateRequest } from "@/common/utils/httpHandlers";
+import { createApiResponse } from "../../api-docs/openAPIResponseBuilders";
+import { UpdatUserProfileSchema, UserSchema } from "../user/userModel";
+import { validateRequest } from "../../common/utils/httpHandlers";
 import { userController } from "./userController";
-import { authGuard } from "@/common/middleware/authGuard";
+import { authGuard } from "../../common/middleware/authGuard";
 
 export const userRegistry = new OpenAPIRegistry();
 export const userRouter: Router = express.Router();

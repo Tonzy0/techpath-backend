@@ -1,5 +1,5 @@
-import { env } from "@/common/utils/envConfig";
-import { app, logger } from "@/server";
+import { env } from "./common/utils/envConfig";
+import { app, logger } from "./server";
 import { connectDatabase } from "./database";
 
 const server = app.listen(env.PORT, () => {

@@ -3,8 +3,8 @@ import express, { type Router } from "express";
 
 import { UserSchema } from "../user/userModel";
 import { authController } from "./authController";
-import { createApiResponse } from "@/api-docs/openAPIResponseBuilders";
-import { validateRequest } from "@/common/utils/httpHandlers";
+import { createApiResponse } from "../../api-docs/openAPIResponseBuilders";
+import { validateRequest } from "../../common/utils/httpHandlers";
 import { LoginUserResponse, LoginUserSchema, RegisterUserSchema } from "./authModel";
 import { z } from "zod";
 

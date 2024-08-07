@@ -1,8 +1,8 @@
 import type { Response } from "express";
 
-import { userService } from "@/api/user/userService";
-import { handleServiceResponse } from "@/common/utils/httpHandlers";
-import type { AuthenticatedRequest } from "@/common/types";
+import { userService } from "../user/userService";
+import { handleServiceResponse } from "../../common/utils/httpHandlers";
+import type { AuthenticatedRequest } from "../../common/types";
 import type { User } from "./userModel";
 
 class UserController {

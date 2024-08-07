@@ -3,7 +3,7 @@ import jwt from "jsonwebtoken";
 import type { NextFunction, Response } from "express";
 import type { AuthenticatedRequest } from "../types";
 import { env } from "../utils/envConfig";
-import { UserRepository } from "@/api/user/userRepository";
+import { UserRepository } from "../../api/user/userRepository";
 
 const userRepository = new UserRepository();
 

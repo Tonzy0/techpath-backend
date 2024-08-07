@@ -1,6 +1,6 @@
 import type { RequestHandler, Request, Response } from "express";
 import { mentorService } from "./mentorService";
-import { handleServiceResponse } from "@/common/utils/httpHandlers";
+import { handleServiceResponse } from "../../common/utils/httpHandlers";
 
 class MentorController {
   public getMentor: RequestHandler = async (req: Request, res: Response) => {

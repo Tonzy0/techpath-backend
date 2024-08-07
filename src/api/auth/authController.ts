@@ -1,6 +1,6 @@
 import type { Request, RequestHandler, Response } from "express";
 import { authService } from "./authService";
-import { handleServiceResponse } from "@/common/utils/httpHandlers";
+import { handleServiceResponse } from "../../common/utils/httpHandlers";
 
 class AuthController {
   public registerUser: RequestHandler = async (req: Request, res: Response) => {

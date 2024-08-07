@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 import { pino } from "pino";
-import { env } from "@/common/utils/envConfig";
+import { env } from "../common/utils/envConfig";
 
 const logger = pino({ name: "database" });
 

@@ -1,4 +1,4 @@
-import type { UpdatUserProfileDto, User } from "@/api/user/userModel";
+import type { UpdatUserProfileDto, User } from "./userModel";
 import { USER_ROLES, userModel } from "./userSchema";
 import type { RegisterUserDto } from "../auth/authModel";
 

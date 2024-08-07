@@ -1,13 +1,13 @@
 import { StatusCodes } from "http-status-codes";
 import bcrypt from "bcrypt";
 
-import { ServiceResponse } from "@/common/models/serviceResponse";
-import { logger } from "@/server";
+import { ServiceResponse } from "../../common/models/serviceResponse";
+import { logger } from "../../server";
 import type { LoginUserDto, LoginUserResponseDto, RegisterUserDto } from "./authModel";
 import { UserRepository } from "../user/userRepository";
 import type { User } from "../user/userModel";
 import jwt from "jsonwebtoken";
-import { env } from "@/common/utils/envConfig";
+import { env } from "../../common/utils/envConfig";
 
 export class AuthService {
   private userRepository: UserRepository;

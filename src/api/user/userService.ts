@@ -1,9 +1,9 @@
 import { StatusCodes } from "http-status-codes";
 
-import type { UpdatUserProfileDto, User } from "@/api/user/userModel";
-import { UserRepository } from "@/api/user/userRepository";
-import { ServiceResponse } from "@/common/models/serviceResponse";
-import { logger } from "@/server";
+import type { UpdatUserProfileDto, User } from "../user/userModel";
+import { UserRepository } from "../user/userRepository";
+import { ServiceResponse } from "../../common/models/serviceResponse";
+import { logger } from "../../server";
 
 export class UserService {
   private userRepository: UserRepository;

@@ -3,9 +3,9 @@ import express, { query, type Router } from "express";
 import { z } from "zod";
 
 import { mentorController } from "./mentorController";
-import { validateRequest } from "@/common/utils/httpHandlers";
-import { commonValidations } from "@/common/utils/commonValidation";
-import { createApiResponse } from "@/api-docs/openAPIResponseBuilders";
+import { validateRequest } from "../../common/utils/httpHandlers";
+import { commonValidations } from "../../common/utils/commonValidation";
+import { createApiResponse } from "../../api-docs/openAPIResponseBuilders";
 import { UserSchema } from "../user/userModel";
 import { FetchMentorsQuerySchema, PaginatedMentorResponse } from "./mentorModel";
 
