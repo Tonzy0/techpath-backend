@@ -1,4 +1,4 @@
-import { handleServiceResponse } from "@/common/utils/httpHandlers";
+import { handleServiceResponse } from "../../common/utils/httpHandlers";
 import type { AuthenticatedRequest } from "../../common/types";
 import type { Response } from "express";
 import { careerPathService } from "./career-path.service";

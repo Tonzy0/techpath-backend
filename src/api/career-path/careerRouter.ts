@@ -3,9 +3,9 @@ import { OpenAPIRegistry } from "@asteasolutions/zod-to-openapi";
 import express, { type Router } from "express";
 import { careerPathController } from "./careerPathController";
 import { SubmitCareerPathSurveySchema } from "./careerPathModel";
-import { createApiResponse } from "@/api-docs/openAPIResponseBuilders";
+import { createApiResponse } from "../../api-docs/openAPIResponseBuilders";
 import { z } from "zod";
-import { authGuard } from "@/common/middleware/authGuard";
+import { authGuard } from "../../common/middleware/authGuard";
 
 export const careerPathRegistry = new OpenAPIRegistry();
 export const careerPathRouter: Router = express.Router();
