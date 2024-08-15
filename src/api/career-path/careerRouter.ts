@@ -1,4 +1,4 @@
-import { validateRequest } from "@/common/utils/httpHandlers";
+import { validateRequest } from "../../common/utils/httpHandlers";
 import { OpenAPIRegistry } from "@asteasolutions/zod-to-openapi";
 import express, { type Router } from "express";
 import { careerPathController } from "./careerPathController";
