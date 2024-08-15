@@ -17,6 +17,8 @@ export const UserSchema = z.object({
   location: z.string(),
   linkedInProfile: z.string(),
   portfolioLink: z.string(),
+  careerPath: z.string(),
+  recommendedCareerPath: z.string(),
   createdAt: z.date(),
   updatedAt: z.date(),
 });
@@ -27,11 +29,12 @@ export const GetUserSchema = z.object({
 });
 
 export const UpdatUserProfileSchema = z.object({
-  careerField: z.string(),
-  yearOfExperience: z.number().int().positive(),
-  location: z.string(),
-  linkedInProfile: z.string(),
-  portfolioLink: z.string(),
+  careerField: z.string().optional(),
+  yearOfExperience: z.number().int().positive().optional(),
+  location: z.string().optional(),
+  linkedInProfile: z.string().optional(),
+  portfolioLink: z.string().optional(),
+  recommendedCareerPath: z.string().optional(),
 });
 
 export type UpdatUserProfileDto = z.TypeOf<typeof UpdatUserProfileSchema>;

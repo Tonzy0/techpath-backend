@@ -11,6 +11,8 @@ interface IUser extends Document {
   location: string;
   linkedInProfile: string;
   portfolioLink: string;
+  recommendedCareerPath: string;
+  careerPath: Schema.Types.ObjectId;
 }
 
 export enum USER_ROLES {
@@ -59,12 +61,25 @@ const UserSchema = new Schema<IUser>(
       type: String,
       required: false,
     },
+    recommendedCareerPath: {
+      type: String,
+      default: "",
+    },
+
+    // careerPath
+    careerPath: {
+      type: Schema.Types.ObjectId,
+      ref: "careerpaths",
+    },
   },
   {
     timestamps: true,
-  },
+  }
 );
 
 UserSchema.plugin(paginate);
 
-export const userModel = model<IUser, PaginateModel<IUser>>("users", UserSchema);
+export const userModel = model<IUser, PaginateModel<IUser>>(
+  "users",
+  UserSchema
+);
